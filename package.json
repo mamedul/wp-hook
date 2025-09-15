@@ -1,0 +1,45 @@
+{
+  "name": "wp-hook",
+  "version": "2025.9.15",
+  "description": "A powerful and flexible hook system for Node.js, inspired by the WordPress actions and filters API.",
+  "files": [
+    "./lib",
+    "./dist",
+    "./rollup.config.js",
+    "./test.js",
+    "./browser-test.html",
+    "./LICENSE",
+    "./CHANGELOG.md",
+    "./README.md"
+  ],
+  "main": "./lib/Wp-Hook.js",
+  "browser": "./dist/wp-hook.umd.js",
+  "scripts": {
+    "test": "node test.js",
+    "build": "rollup -c",
+    "build:minify": "cross-env NODE_ENV=production rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mamedul/wp-hook.git"
+  },
+  "keywords": [
+    "hooks",
+    "actions",
+    "filters",
+    "events",
+    "wordpress",
+    "plugin",
+    "architecture",
+    "extensible"
+  ],
+  "author": "MAMEDUL ISLAM",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
+    "cross-env": "^10.0.0",
+    "rollup": "^4.50.0"
+  }
+}
